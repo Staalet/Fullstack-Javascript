@@ -1,6 +1,7 @@
 var allResults = [];
 
 // Error handling with promises
+// 3 states resolve = godt, reject = ikke godt, pending = ikke godt
 function myPromise(msg, delay) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
