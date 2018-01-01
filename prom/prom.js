@@ -1,5 +1,6 @@
 var allResults = [];
 
+// Error handling with promises
 function myPromise(msg, delay) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -13,6 +14,9 @@ function myPromise(msg, delay) {
     });
 }
 
+// serial promises
+//Det tager 5 sekkunder fordi den kører alle promises i rækkefølge. 
+//dvs. når vi skriver allResults ud er har vi ventet på alle promises er kørt.
 const p1 = new myPromise("hi class", 2000);
 p1.then((data) => {
     allResults.push(data);
@@ -30,6 +34,8 @@ p1.then((data) => {
     console.log(err.message);
 });
 
+// parallel promises
+// alle bliver kørt samtidigt
 function parallel(){
     const p1 = new myPromise("hi class 1", 1000);
     const p2 = new myPromise("hi class 2", 1000);

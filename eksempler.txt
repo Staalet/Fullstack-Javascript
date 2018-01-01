@@ -1,9 +1,0 @@
-ar names = ["Lars", "Jan", "Peter", "Bo", "Frederik"];
-//Ex1
-var namesFilter = names.filter(function (name) {
-    console.log(name);
-    if (name.length <= 3) {
-        return name;
-    }
-});
-console.log("namesFilter", namesFilter);

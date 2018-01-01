@@ -1,6 +1,3 @@
-
-
-
 var names = ["Lars", "Jan", "Peter", "Bo", "Frederik"];
 //Ex1
 var namesFilter = names.filter(function (name) {

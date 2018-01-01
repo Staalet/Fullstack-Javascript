@@ -58,7 +58,7 @@ var updateList = names2.filter(function(name){
     }
 });
 document.getElementById("but").onclick = function(){
-    documents.getElementById("table").innerHTML = updateList;
+    document.getElementById("table").innerHTML = updateList;
     
     
 }
