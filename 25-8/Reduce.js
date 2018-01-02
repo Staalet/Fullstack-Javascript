@@ -26,6 +26,10 @@ var reducerM = function(accumulator, member, index, arr){
     return temp;
 }
 
+var newAge = members.reduce(members);
+
 var resultAge = members.reduce(reducerM, initialValue);
+
+console.log("newAge", newAge);
 
 console.log(resultAge);
